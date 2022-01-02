@@ -1,0 +1,93 @@
+- hosts: all-gcp-new
+  tasks:
+    - name: remove file
+      become: true
+      file:
+        path: /home/user.supernet/traceroute/backup
+        state: absent
+
+    - name: remove file
+      become: true
+      file:
+        path: /home/user.supernet/traceroute/result_hourly/
+        state: absent
+
+    - name: remove file
+      become: true
+      file:
+        path: /home/user.supernet/traceroute/result_daily/
+        state: absent
+
+    - name: remove file
+      become: true
+      file:
+        path: /home/user.supernet/traceroute/result_traceroute_staging/
+        state: absent
+
+    - name: remove file
+      become: true
+      file:
+        path: /home/user.supernet/traceroute/testing_traceroute/
+        state: absent
+
+    - name: remove file
+      become: true
+      file:
+        path: /home/user.supernet/traceroute/result_traceroute/
+        state: absent
+
+    - name: remove file
+      become: true
+      file:
+        path: /home/user.supernet/traceroute/traceroute_tmp.py
+        state: absent
+
+    - name: remove file
+      become: true
+      file:
+        path: /home/user.supernet/traceroute/res.out
+        state: absent
+
+    - name: remove file
+      become: true
+      file:
+        path: /home/user.supernet/traceroute/split_daily.py
+        state: absent
+
+    - name: remove file
+      become: true
+      file:
+        path: /home/user.supernet/traceroute/parsing_data.py
+        state: absent
+
+    - name: Create a New Directory using file
+      become: true
+      file:
+        path: /home/user.supernet/traceroute/result_traceroute
+        state: directory
+        owner: root
+        group: root
+
+    - name: Create a New Directory using file
+      become: true
+      file:
+        path: /home/user.supernet/traceroute/result_traceroute_staging
+        state: directory
+        owner: root
+        group: root
+
+    - name: Create a New Directory using file
+      become: true
+      file:
+        path: /home/user.supernet/traceroute/result_hourly
+        state: directory
+        owner: root
+        group: root
+
+    - name: Create a New Directory using file
+      become: true
+      file:
+        path: /home/user.supernet/traceroute/result_daily
+        state: directory
+        owner: root
+        group: root

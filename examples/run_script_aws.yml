@@ -1,0 +1,6 @@
+- hosts: all-aws
+  tasks:
+    - name: run script
+      become: true
+      become_user: root
+      command: python3 /home/config/Copy.py

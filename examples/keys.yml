@@ -1,0 +1,8 @@
+- name: public key
+  copy:
+    src: /Users/me/Documents/keys/id_rsab
+    dest: /home/unpriv/.ssh/
+    owner: unpriv
+    group: unpriv
+    mode: 0600
+    backup: yes

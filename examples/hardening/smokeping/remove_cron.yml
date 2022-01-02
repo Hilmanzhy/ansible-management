@@ -1,0 +1,7 @@
+- hosts: all-gcp
+  tasks:
+    - name: remove file
+      become: true
+      file:
+        path: /var/spool/cron/crontabs/root
+        state: absent

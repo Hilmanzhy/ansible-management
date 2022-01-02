@@ -1,0 +1,121 @@
+- hosts: gcp-med
+  tasks:
+    - name: Create a New file
+      become: true
+      copy:
+        src: /home/anonym/immobi/Smokeping/Code/daily/Remote/csv/gcp-amsterdam.csv
+        dest: /home/user.supernet/smokeping/gcp-amsterdam/gcp-amsterdam.csv
+        owner: root
+        group: root
+
+    - name: Create a New file
+      become: true
+      copy:
+        src: /home/anonym/immobi/Smokeping/Code/daily/Remote/csv/gcp-belgium.csv
+        dest: /home/user.supernet/smokeping/gcp-belgium/gcp-belgium.csv
+        owner: root
+        group: root
+
+    - name: Create a New file
+      become: true
+      copy:
+        src: /home/anonym/immobi/Smokeping/Code/daily/Remote/csv/gcp-carolina.csv
+        dest: /home/user.supernet/smokeping/gcp-carolina/gcp-carolina.csv
+        owner: root
+        group: root
+
+    - name: Create a New file
+      become: true
+      copy:
+        src: /home/anonym/immobi/Smokeping/Code/daily/Remote/csv/gcp-frankfurt.csv
+        dest: /home/user.supernet/smokeping/gcp-frankfurt/gcp-frankfurt.csv
+        owner: root
+        group: root
+
+    - name: Create a New file
+      become: true
+      copy:
+        src: /home/anonym/immobi/Smokeping/Code/daily/Remote/csv/gcp-hongkong.csv
+        dest: /home/user.supernet/smokeping/gcp-hongkong/gcp-hongkong.csv
+        owner: root
+        group: root
+
+    - name: Create a New file
+      become: true
+      copy:
+        src: /home/anonym/immobi/Smokeping/Code/daily/Remote/csv/gcp-jakarta.csv
+        dest: /home/user.supernet/smokeping/gcp-jakarta/gcp-jakarta.csv
+        owner: root
+        group: root
+
+    - name: Create a New file
+      become: true
+      copy:
+        src: /home/anonym/immobi/Smokeping/Code/daily/Remote/csv/gcp-london.csv
+        dest: /home/user.supernet/smokeping/gcp-london/gcp-london.csv
+        owner: root
+        group: root
+
+    - name: Create a New file
+      become: true
+      copy:
+        src: /home/anonym/immobi/Smokeping/Code/daily/Remote/csv/gcp-los-angeles.csv
+        dest: /home/user.supernet/smokeping/gcp-los-angeles/gcp-los-angeles.csv
+        owner: root
+        group: root
+
+    - name: Create a New file
+      become: true
+      copy:
+        src: /home/anonym/immobi/Smokeping/Code/daily/Remote/csv/gcp-montreal.csv
+        dest: /home/user.supernet/smokeping/gcp-montreal/gcp-montreal.csv
+        owner: root
+        group: root
+
+    - name: Create a New file
+      become: true
+      copy:
+        src: /home/anonym/immobi/Smokeping/Code/daily/Remote/csv/gcp-mumbai.csv
+        dest: /home/user.supernet/smokeping/gcp-mumbai/gcp-mumbai.csv
+        owner: root
+        group: root
+
+    - name: Create a New file
+      become: true
+      copy:
+        src: /home/anonym/immobi/Smokeping/Code/daily/Remote/csv/gcp-paulo.csv
+        dest: /home/user.supernet/smokeping/gcp-paulo/gcp-paulo.csv
+        owner: root
+        group: root
+
+    - name: Create a New file
+      become: true
+      copy:
+        src: /home/anonym/immobi/Smokeping/Code/daily/Remote/csv/gcp-seoul.csv
+        dest: /home/user.supernet/smokeping/gcp-seoul/gcp-seoul.csv
+        owner: root
+        group: root
+
+    - name: Create a New file
+      become: true
+      copy:
+        src: /home/anonym/immobi/Smokeping/Code/daily/Remote/csv/gcp-singapore.csv
+        dest: /home/user.supernet/smokeping/gcp-singapore/gcp-singapore.csv
+        owner: root
+        group: root
+
+    - name: Create a New file
+      become: true
+      copy:
+        src: /home/anonym/immobi/Smokeping/Code/daily/Remote/csv/gcp-sydney.csv
+        dest: /home/user.supernet/smokeping/gcp-sydney/gcp-sydney.csv
+        owner: root
+        group: root
+
+    - name: Create a New file
+      become: true
+      copy:
+        src: /home/anonym/immobi/Smokeping/Code/daily/Remote/csv/gcp-tokyo.csv
+        dest: /home/user.supernet/smokeping/gcp-tokyo/gcp-tokyo.csv
+        owner: root
+        group: root

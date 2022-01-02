@@ -1,0 +1,6 @@
+- hosts: all-aws-new
+  tasks:
+    - name: Uninstall netdata
+      become: true
+      apt:
+        autoremove: yes

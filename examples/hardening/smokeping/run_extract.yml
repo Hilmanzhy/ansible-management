@@ -1,0 +1,6 @@
+- hosts: all-aws-new
+  tasks:
+    - name: run script
+      become: true
+      become_user: root
+      command: sh /home/ubuntu/hardening/extract.sh

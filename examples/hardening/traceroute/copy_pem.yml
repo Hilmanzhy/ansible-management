@@ -1,0 +1,8 @@
+- hosts: all-gcp
+  tasks:
+    - name: upload a main file
+      become: true
+      copy:
+        src: /home/anonym/immobi/remote_server/GCP.pem
+        dest: /home/user.supernet/traceroute/GCP.pem
+        mode: 0400

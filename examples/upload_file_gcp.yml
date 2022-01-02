@@ -1,0 +1,9 @@
+- hosts: all-gcp
+  tasks:
+    - name: Copy a New file
+      become: true
+      copy:
+        src: /home/anonym/immobi/Traceroute/Code/traceroute_tmp.py
+        dest: /home/user.supernet/traceroute/traceroute_tmp.py
+        owner: root
+        group: root

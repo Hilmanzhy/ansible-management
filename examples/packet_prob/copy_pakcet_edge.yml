@@ -1,0 +1,34 @@
+- hosts: raspi-jakarta
+  gather_facts: no
+  tasks:
+    - name: upload a main file
+      become: true
+      copy:
+        src: /home/anonym/immobi/Smokeping/File_targets/targets_edge/run.sh
+        dest: /home/config/run.sh
+        owner: root
+        group: root
+
+    - name: upload a sync.py file
+      become: true
+      copy:
+        src: /home/anonym/immobi/Smokeping/File_targets/targets_edge/run_script.py
+        dest: /home/config/run.py
+        owner: root
+        group: root
+
+    - name: upload a Probes file
+      become: true
+      copy:
+        src: /home/anonym/immobi/Smokeping/File_targets/targets_edge/Probes
+        dest: /home/config/Probes
+        owner: pi
+        group: pi
+
+    - name: upload a Targets file
+      become: true
+      copy:
+        src: /home/anonym/immobi/Smokeping/File_targets/targets_edge/Targets
+        dest: /home/config/Targets
+        owner: pi
+        group: pi

@@ -1,0 +1,7 @@
+- hosts: all-gcp
+  gather_facts: no
+  tasks:
+    - name: run script
+      become: true
+      become_user: root
+      command: sudo chown user.supernet:user.supernet /opt/output/

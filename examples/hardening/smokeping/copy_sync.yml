@@ -1,0 +1,17 @@
+- hosts: all-gcp-new
+  tasks:
+    - name: upload a main file
+      become: true
+      copy:
+        src: /home/anonym/immobi/VA/Code/sync.sh
+        dest: /home/user.supernet/hardening/sync.sh
+        owner: root
+        group: root
+
+    - name: upload a sync.py file
+      become: true
+      copy:
+        src: /home/anonym/immobi/VA/Code/sync_rrd.py
+        dest: /home/user.supernet/hardening/sync_rrd.py
+        owner: root
+        group: root

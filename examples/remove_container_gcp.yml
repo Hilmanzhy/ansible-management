@@ -1,0 +1,7 @@
+- hosts: all-gcp
+  tasks:
+    - name: remove container
+      become: true
+      docker_container:
+        name: smokeping
+        state: absent

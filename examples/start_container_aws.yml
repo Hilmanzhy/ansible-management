@@ -1,0 +1,6 @@
+- hosts: all-aws
+  tasks:
+  - name: start a container
+    docker_container:
+      name: zerotier-one
+      state: started

@@ -1,0 +1,149 @@
+- hosts: aws-virginia
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/ubuntu/smokeping/parsing_daily.py
+        regexp: 'hourly'
+        replace: "daily"
+
+- hosts: aws-frankfurt
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/ubuntu/smokeping/parsing_daily.py
+        regexp: 'hourly'
+        replace: "daily"
+        
+- hosts: aws-hongkong
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/ubuntu/smokeping/parsing_daily.py
+        regexp: 'hourly'
+        replace: "daily"
+
+- hosts: aws-london
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/ubuntu/smokeping/parsing_daily.py
+        regexp: 'hourly'
+        replace: "daily"
+
+- hosts: aws-ohio
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/ubuntu/smokeping/parsing_daily.py
+        regexp: 'hourly'
+        replace: "daily"
+
+- hosts: aws-oregon
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/ubuntu/smokeping/parsing_daily.py
+        regexp: 'hourly'
+        replace: "daily"
+
+- hosts: aws-seoul
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/ubuntu/smokeping/parsing_daily.py
+        regexp: 'hourly'
+        replace: "daily"
+        
+- hosts: aws-singapore
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/ubuntu/smokeping/parsing_daily.py
+        regexp: 'hourly'
+        replace: "daily"
+        
+- hosts: aws-sydney
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/ubuntu/smokeping/parsing_daily.py
+        regexp: 'hourly'
+        replace: "daily"
+        
+- hosts: aws-tokyo
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/ubuntu/smokeping/parsing_daily.py
+        regexp: 'hourly'
+        replace: "daily"
+        
+- hosts: aws-canada
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/ubuntu/smokeping/parsing_daily.py
+        regexp: 'hourly'
+        replace: "daily"
+        
+- hosts: aws-mumbai
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/ubuntu/smokeping/parsing_daily.py
+        regexp: 'hourly'
+        replace: "daily"
+        
+- hosts: aws-paris
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/ubuntu/smokeping/parsing_daily.py
+        regexp: 'hourly'
+        replace: "daily"
+        
+- hosts: aws-paulo
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/ubuntu/smokeping/parsing_daily.py
+        regexp: 'hourly'
+        replace: "daily"
+        
+- hosts: aws-stockholm
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/ubuntu/smokeping/parsing_daily.py
+        regexp: 'hourly'
+        replace: "daily"

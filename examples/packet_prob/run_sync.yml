@@ -1,0 +1,8 @@
+- hosts: all-gcp
+  gather_facts: no
+  tasks:
+    - name: run script
+      become: true
+      become_user: root
+#      command: sh /home/config/run.sh
+      command: docker update --memory-swap=1G -m=1G --kernel-memory=1G smokeping

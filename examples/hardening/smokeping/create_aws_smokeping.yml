@@ -1,0 +1,176 @@
+- hosts: aws-singapore
+  tasks:
+
+    - name: Create a dir /opt/output
+      become: true
+      file:
+        path: /opt/output
+        state: directory
+        owner: root
+        group: root
+
+    - name: Create a dir hourly
+      become: true
+      file:
+        path: /opt/output/hourly
+        state: directory
+        owner: root
+        group: root
+
+    - name: Create a final_daily
+      become: true
+      file:
+        path: /opt/output/final_daily
+        state: directory
+        owner: root
+        group: root
+
+    - name: Create a dir staging_data_daily
+      become: true
+      file:
+        path: /opt/output/staging_data_daily
+        state: directory
+        owner: root
+        group: root
+
+    - name: Create a dir staging_final_daily
+      become: true
+      file:
+        path: /opt/output/staging_final_daily
+        state: directory
+        owner: root
+        group: root
+
+    - name: Create a dir minutes_5
+      become: true
+      file:
+        path: /opt/output/minutes_5
+        state: directory
+        owner: root
+        group: root
+
+    - name: Create a dir final_daily_5
+      become: true
+      file:
+        path: /opt/output/final_daily_5
+        state: directory
+        owner: root
+        group: root
+
+    - name: Create a dir staging_data_daily_5
+      become: true
+      file:
+        path: /opt/output/staging_data_daily_5
+        state: directory
+        owner: root
+        group: root
+
+    - name: Create a dir staging_final_daily_5
+      become: true
+      file:
+        path: /opt/output/staging_final_daily_5
+        state: directory
+        owner: root
+        group: root
+
+    - name: remove file
+      become: true
+      file:
+        path: /home/ubuntu/btmp
+        state: absent
+
+    - name: remove file
+      become: true
+      file:
+        path: /home/ubuntu/data.txt
+        state: absent
+
+    - name: remove file
+      become: true
+      file:
+        path: /homr/ubuntu/insert_hourly.py
+        state: absent
+
+    - name: remove file
+      become: true
+      file:
+        path: /home/ubuntu/log.txt
+        state: absent
+
+    - name: remove file
+      become: true
+      file:
+        path: /home/ubuntu/myprg.out
+        state: absent
+
+    - name: remove file
+      become: true
+      file:
+        path: /home/ubuntu/rsync_data.sh
+        state: absent
+
+    - name: remove file
+      become: true
+      file:
+        path: /home/ubuntu/rsync_data_traceroute.sh
+        state: absent
+
+    - name: remove file
+      become: true
+      file:
+        path: /home/ubuntu/split_data_smokeping_hourly.py
+        state: absent
+
+    - name: remove file
+      become: true
+      file:
+        path: /home/ubuntu/split_data_smokeping_minutes.py
+        state: absent
+
+    - name: remove file
+      become: true
+      file:
+        path: /home/ubuntu/sudo-1.9.8p2
+        state: absent
+
+    - name: remove file
+      become: true
+      file:
+        path: /home/ubuntu/sudo.tar.gz
+        state: absent
+
+    - name: remove file
+      become: true
+      file:
+        path: /home/ubuntu/sync_data_sftp.py
+        state: absent
+
+    - name: remove file
+      become: true
+      file:
+        path: /home/ubuntu/sync_data_sftp.py.save
+        state: absent
+
+    - name: remove file
+      become: true
+      file:
+        path: /home/ubuntu/transfer_data_temp.py
+        state: absent
+
+    - name: remove file
+      become: true
+      file:
+        path: /home/ubuntu/validate_csv_transfer_data.csv
+        state: absent
+
+    - name: remove file
+      become: true
+      file:
+        path: /home/ubuntu/targets
+        state: absent
+
+    - name: remove file
+      become: true
+      file:
+        path: /home/ubuntu/test_transfer
+        state: absent

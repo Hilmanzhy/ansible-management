@@ -1,0 +1,106 @@
+- hosts: gcp-med
+  tasks:
+    - name: Create a New Directory using file
+      file:
+        path: /home/user.supernet/smokeping/gcp-frankfurt/hourly
+        state: directory
+        owner: user.supernet
+        group: user.supernet
+
+    - name: Create a New Directory using file
+      file:
+        path: /home/user.supernet/smokeping/gcp-hongkong/hourly
+        state: directory
+        owner: user.supernet
+        group: user.supernet
+
+    - name: Create a New Directory using file
+      file:
+        path: /home/user.supernet/smokeping/gcp-jakarta/hourly
+        state: directory
+        owner: user.supernet
+        group: user.supernet
+
+    - name: Create a New Directory using file
+      file:
+        path: /home/user.supernet/smokeping/gcp-london/hourly
+        state: directory
+        owner: user.supernet
+        group: user.supernet
+
+    - name: Create a New Directory using file
+      file:
+        path: /home/user.supernet/smokeping/gcp-los-angeles/hourly
+        state: directory
+        owner: user.supernet
+        group: user.supernet
+
+    - name: Create a New Directory using file
+      file:
+        path: /home/user.supernet/smokeping/gcp-seoul/hourly
+        state: directory
+        owner: user.supernet
+        group: user.supernet
+
+    - name: Create a New Directory using file
+      file:
+        path: /home/user.supernet/smokeping/gcp-singapore/hourly
+        state: directory
+        owner: user.supernet
+        group: user.supernet
+
+    - name: Create a New Directory using file
+      file:
+        path: /home/user.supernet/smokeping/gcp-carolina/hourly
+        state: directory
+        owner: user.supernet
+        group: user.supernet
+
+    - name: Create a New Directory using file
+      file:
+        path: /home/user.supernet/smokeping/gcp-sydney/hourly
+        state: directory
+        owner: user.supernet
+        group: user.supernet
+
+    - name: Create a New Directory using file
+      file:
+        path: /home/user.supernet/smokeping/gcp-tokyo/hourly
+        state: directory
+        owner: user.supernet
+        group: user.supernet
+
+    - name: Create a New Directory using file
+      file:
+        path: /home/user.supernet/smokeping/gcp-amsterdam/hourly
+        state: directory
+        owner: user.supernet
+        group: user.supernet
+
+    - name: Create a New Directory using file
+      file:
+        path: /home/user.supernet/smokeping/gcp-belgium/hourly
+        state: directory
+        owner: user.supernet
+        group: user.supernet
+
+    - name: Create a New Directory using file
+      file:
+        path: /home/user.supernet/smokeping/gcp-montreal/hourly
+        state: directory
+        owner: user.supernet
+        group: user.supernet
+
+    - name: Create a New Directory using file
+      file:
+        path: /home/user.supernet/smokeping/gcp-paulo/hourly
+        state: directory
+        owner: user.supernet
+        group: user.supernet
+
+    - name: Create a New Directory using file
+      file:
+        path: /home/user.supernet/smokeping/gcp-mumbai/hourly
+        state: directory
+        owner: user.supernet
+        group: user.supernet

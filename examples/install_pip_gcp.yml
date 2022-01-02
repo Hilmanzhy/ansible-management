@@ -1,0 +1,7 @@
+- hosts: all-gcp
+  tasks:
+    - name: install pip3 docker
+      become: true
+      pip:
+        name: docker
+        executable: pip3

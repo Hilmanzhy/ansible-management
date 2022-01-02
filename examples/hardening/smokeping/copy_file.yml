@@ -1,0 +1,49 @@
+- hosts: all-gcp-new
+  tasks:
+    - name: create dir
+      become: true
+      file:
+        path: /home/user.supernet/hardening
+        state: directory
+        owner: root
+        group: root
+
+    - name: upload a main file
+      become: true
+      copy:
+        src: /home/anonym/immobi/VA/Code/Main.py
+        dest: /home/user.supernet/hardening/Main.py
+        owner: root
+        group: root
+
+    - name: upload a main file
+      become: true
+      copy:
+        src: /home/anonym/immobi/VA/Code/Config.json
+        dest: /home/user.supernet/hardening/Config.json
+        owner: root
+        group: root
+
+    - name: upload a main file
+      become: true
+      copy:
+        src: /home/anonym/immobi/VA/Code/PrepareTarget.py
+        dest: /home/user.supernet/hardening/PrepareTarget.py
+        owner: root
+        group: root
+
+    - name: upload a main file
+      become: true
+      copy:
+        src: /home/anonym/immobi/VA/Code/MergeRRD.py
+        dest: /home/user.supernet/hardening/MergeRRD.py
+        owner: root
+        group: root
+
+    - name: upload a main file
+      become: true
+      copy:
+        src: /home/anonym/immobi/remote_server/aws.pem
+        dest: /home/user.supernet/hardening/aws.pem
+        owner: root
+        group: root

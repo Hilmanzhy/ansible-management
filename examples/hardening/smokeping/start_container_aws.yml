@@ -1,0 +1,21 @@
+- hosts: all-aws-new
+  vars:
+  - ansible_python_interpreter: /usr/bin/python2.7
+  gather_facts: no
+  tasks:
+  - name: start a container
+    docker_container:
+      name: smokeping
+      image: sysdamin/smokeping:1.0
+      env:
+        PUID=1000
+        PGID=1000
+        TZ=Europe/London
+      published_ports: 0.0.0.0:8080:80
+      volumes:
+        - /config:/config
+        - /data:/data
+      restart_policy: unless-stopped
+      kernel_memory: 1G
+      memory: 1G
+

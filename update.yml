@@ -1,0 +1,4 @@
+- hosts: aws-hongkong
+  gather_facts: no
+  roles:
+    - update

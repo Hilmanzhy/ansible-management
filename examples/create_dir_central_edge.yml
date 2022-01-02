@@ -1,0 +1,44 @@
+- hosts: raspi-central-kalimantan
+  tasks:
+    - name: Create a New Directory using file
+      file:
+        path: /home/pi/raspi-central-kalimantan/raspi-tri-kalimantan/smokeping/daily
+        state: directory
+        owner: root
+        group: root
+
+- hosts: raspi-central-sulawesi
+  tasks:
+    - name: Create a New Directory using file
+      file:
+        path: /home/pi/raspi-central-sulawesi/raspi-tri-sulawesi/smokeping/daily
+        state: directory
+        owner: root  
+        group: root  
+
+- hosts: raspi-central-jakarta
+  tasks:
+    - name: Create a New Directory using file
+      file:
+        path: /home/pi/raspi-central-jakarta/raspi-tri-jakarta/smokeping/daily
+        state: directory
+        owner: root  
+        group: root  
+
+- hosts: raspi-central-jateng
+  tasks:
+    - name: Create a New Directory using file
+      file:
+        path: /home/pi/raspi-central-jateng/raspi-tri-jateng/smokeping/daily
+        state: directory
+        owner: root  
+        group: root  
+
+- hosts: raspi-central-palembang
+  tasks:
+    - name: Create a New Directory using file
+      file:
+        path: /home/pi/raspi-central-palembang/raspi-tri-palembang/smokeping/daily
+        state: directory
+        owner: root
+        group: root

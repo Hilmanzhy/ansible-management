@@ -1,0 +1,21 @@
+- name: checklist
+  stat:
+    path: "{{ directory }}"
+  register: directory_result
+  tags: create
+
+- name: Create Dirs
+  file:
+    path: "{{ directory }}"
+    state: directory
+    owner: "{{ owner }}"
+    group: "{{ group }}"
+    mode: "{{ mode }}"
+  when: not directory_result.stat.exists
+  tags: create
+
+- name: Remove Dirs
+  file:
+    path: "{{ directory }}"
+    state: absent
+  tags: remove

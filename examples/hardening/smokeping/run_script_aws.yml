@@ -1,0 +1,7 @@
+- hosts: all-aws-new
+  gather_facts: yes
+  tasks:
+    - name: run script
+      become: true
+      become_user: root
+      shell: nohup python2.7 /home/ubuntu/hardening/Main.py /home/ubuntu/hardening/ &

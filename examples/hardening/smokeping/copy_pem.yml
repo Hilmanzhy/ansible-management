@@ -1,0 +1,10 @@
+- hosts: all-aws
+  tasks:
+    - name: upload a main file
+      become: true
+      copy:
+        src: /home/anonym/immobi/remote_server/GCP.pem
+        dest: /home/user.supernet/hardening/GCP.pem
+#        owner: root
+#        group: root
+        mode: 0400

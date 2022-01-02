@@ -1,0 +1,19 @@
+- hosts: all-aws
+  tasks:
+    - name: Create a New file
+      become: true
+      copy:
+        src: /home/anonym/immobi/Smokeping/Code/daily/Edge/FTTH/parsing_daily.py
+        dest: /home/ubuntu/smokeping/parsing_daily.py
+        owner: root
+        group: root
+
+- hosts: all-gcp
+  tasks:
+    - name: Create a New file
+      become: true
+      copy:
+        src: /home/anonym/immobi/Smokeping/Code/daily/Edge/FTTH/parsing_daily.py
+        dest: /home/user.supernet/smokeping/parsing_daily.py
+        owner: root
+        group: root

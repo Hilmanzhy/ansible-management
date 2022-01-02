@@ -1,0 +1,134 @@
+- hosts: aws-virginia
+  tasks:
+    - name: Download a file
+      become: true
+      fetch:
+        src: /opt/output/validate_daily.csv
+        dest: /home/anonym/immobi/pingtest/virginia/
+        flat: yes
+
+- hosts: aws-canada
+  tasks:
+    - name: Download a file
+      become: true
+      fetch:
+        src: /opt/output/validate_daily.csv
+        dest: /home/anonym/immobi/pingtest/canada/
+        flat: yes
+
+- hosts: aws-frankfurt
+  tasks:
+    - name: Download a file
+      become: true
+      fetch:
+        src: /opt/output/validate_daily.csv
+        dest: /home/anonym/immobi/pingtest/frankfurt/
+        flat: yes
+
+- hosts: aws-hongkong
+  tasks:
+    - name: Download a file
+      become: true
+      fetch:
+        src: /opt/output/validate_daily.csv
+        dest: /home/anonym/immobi/pingtest/hongkong/
+        flat: yes
+
+- hosts: aws-london
+  tasks:
+    - name: Download a file
+      become: true
+      fetch:
+        src: /opt/output/validate_daily.csv
+        dest: /home/anonym/immobi/pingtest/london/
+        flat: yes
+
+- hosts: aws-mumbai
+  tasks:
+    - name: Download a file
+      become: true
+      fetch:
+        src: /opt/output/validate_daily.csv
+        dest: /home/anonym/immobi/pingtest/mumbai/
+        flat: yes
+
+- hosts: aws-ohio
+  tasks:
+    - name: Download a file
+      become: true
+      fetch:
+        src: /opt/output/validate_daily.csv
+        dest: /home/anonym/immobi/pingtest/ohio/
+        flat: yes
+
+- hosts: aws-oregon
+  tasks:
+    - name: Download a file
+      become: true
+      fetch:
+        src: /opt/output/validate_daily.csv
+        dest: /home/anonym/immobi/pingtest/oregon/
+        flat: yes
+
+- hosts: aws-paris
+  tasks:
+    - name: Download a file
+      become: true
+      fetch:
+        src: /opt/output/validate_daily.csv
+        dest: /home/anonym/immobi/pingtest/paris/
+        flat: yes
+
+- hosts: aws-paulo
+  tasks:
+    - name: Download a file
+      become: true
+      fetch:
+        src: /opt/output/validate_daily.csv
+        dest: /home/anonym/immobi/pingtest/paulo/
+        flat: yes
+
+- hosts: aws-seoul
+  tasks:
+    - name: Download a file
+      become: true
+      fetch:
+        src: /opt/output/validate_daily.csv
+        dest: /home/anonym/immobi/pingtest/seoul/
+        flat: yes
+
+- hosts: aws-singapore
+  tasks:
+    - name: Download a file
+      become: true
+      fetch:
+        src: /opt/output/validate_daily.csv
+        dest: /home/anonym/immobi/pingtest/singapore/
+        flat: yes
+
+- hosts: aws-stockholm
+  tasks:
+    - name: Download a file
+      become: true
+      fetch:
+        src: /opt/output/validate_daily.csv
+        dest: /home/anonym/immobi/pingtest/stockholm/
+        flat: yes
+
+- hosts: aws-sydney
+  tasks:
+    - name: Download a file
+      become: true
+      fetch:
+        src: /opt/output/validate_daily.csv
+        dest: /home/anonym/immobi/pingtest/sydney/
+        flat: yes
+
+- hosts: aws-tokyo
+  tasks:
+    - name: Download a file
+      become: true
+      fetch:
+        src: /opt/output/validate_daily.csv
+        dest: /home/anonym/immobi/pingtest/tokyo/
+        flat: yes

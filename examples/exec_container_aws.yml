@@ -1,0 +1,10 @@
+- hosts: aws-seoul
+  tasks:
+    - name: Run a simple command
+      become: true
+      command: docker exec -it zerotier-one sh -c 'echo "zerotier-cli status"'
+      register: result
+
+    - name: Print stdout
+      debug:
+        var: result.stdout

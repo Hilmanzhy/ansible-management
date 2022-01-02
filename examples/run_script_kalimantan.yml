@@ -1,0 +1,27 @@
+- hosts: raspi-tsel-kalimantan
+  tasks:
+    - name: run script
+      become: true
+      become_user: root
+      command: python3 /home/config/Copy.py
+
+- hosts: raspi-isat-kalimantan
+  tasks:
+    - name: run script
+      become: true
+      become_user: root
+      command: python3 /home/config/Copy.py
+
+- hosts: raspi-xl-kalimantan
+  tasks:
+    - name: run script
+      become: true
+      become_user: root
+      command: python3 /home/config/Copy.py
+
+- hosts: raspi-tri-kalimantan
+  tasks:
+    - name: run script
+      become: true
+      become_user: root
+      command: python3 /home/config/Copy.py

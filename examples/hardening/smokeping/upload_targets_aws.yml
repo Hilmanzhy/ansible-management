@@ -1,0 +1,9 @@
+- hosts: all-aws-new
+  tasks:
+    - name: Copy a New file
+      become: true
+      copy:
+        src: /home/anonym/immobi/Smokeping/File_targets/targets_remote/Targets
+        dest: /home/config/Targets
+        owner: root
+        group: root

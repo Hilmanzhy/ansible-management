@@ -1,0 +1,11 @@
+- hosts: parser
+  vars:
+    f1: (2021, 9, 9)
+    f2: (2021, 9, 10)
+  tasks:
+    - name: Download a file
+      become: true
+      synchronize:
+        mode: pull
+        src: /home/core/smokeping/netview-remote/aws-hongkong/hourly/'{{f1}}'/
+        dest: /home/anonym/immobi/pingtest/aws-hongkong/{{f1}}/

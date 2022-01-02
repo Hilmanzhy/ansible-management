@@ -1,0 +1,17 @@
+---
+- hosts: all-aws
+  tasks:
+    - name: Update cache
+      become: true
+      become_user: root
+      register: yum_result
+      failed_when: yum_result.rc != 100
+      apt:
+       update_cache=yes force_apt_get=yes
+    - name: Upgrade package
+      apt:
+       name: "*"
+       state: latest
+    - name: Dist upgrade
+      apt:
+       upgrade=dist force_apt_get=yes

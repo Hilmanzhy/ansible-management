@@ -1,0 +1,149 @@
+- hosts: gcp-frankfurt
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/user.supernet/smokeping/parsing_daily.py
+        regexp: 'gcp-sydney'
+        replace: "gcp-frankfurt"
+
+- hosts: gcp-hongkong
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/user.supernet/smokeping/parsing_daily.py
+        regexp: 'gcp-sydney'
+        replace: "gcp-hongkong"
+
+- hosts: gcp-jakarta
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/user.supernet/smokeping/parsing_daily.py
+        regexp: 'gcp-sydney'
+        replace: "gcp-jakarta"
+
+- hosts: gcp-london
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/user.supernet/smokeping/parsing_daily.py
+        regexp: 'gcp-sydney'
+        replace: "gcp-london"
+
+- hosts: gcp-los-angeles
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/user.supernet/smokeping/parsing_daily.py
+        regexp: 'gcp-sydney'
+        replace: "gcp-los-angeles"
+
+- hosts: gcp-seoul
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/user.supernet/smokeping/parsing_daily.py
+        regexp: 'gcp-sydney'
+        replace: "gcp-seoul"
+
+- hosts: gcp-singapore
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/user.supernet/smokeping/parsing_daily.py
+        regexp: 'gcp-sydney'
+        replace: "gcp-singapore"
+
+- hosts: gcp-carolina
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/user.supernet/smokeping/parsing_daily.py
+        regexp: 'gcp-sydney'
+        replace: "gcp-carolina"
+
+- hosts: gcp-sydney
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/user.supernet/smokeping/parsing_daily.py
+        regexp: 'gcp-sydney'
+        replace: "gcp-sydney"
+
+- hosts: gcp-tokyo
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/user.supernet/smokeping/parsing_daily.py
+        regexp: 'gcp-sydney'
+        replace: "gcp-tokyo"
+
+- hosts: gcp-amsterdam
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/user.supernet/smokeping/parsing_daily.py
+        regexp: 'gcp-sydney'
+        replace: "gcp-amsterdam"
+
+- hosts: gcp-belgium
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/user.supernet/smokeping/parsing_daily.py
+        regexp: 'gcp-sydney'
+        replace: "gcp-belgium"
+
+- hosts: gcp-montreal
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/user.supernet/smokeping/parsing_daily.py
+        regexp: 'gcp-sydney'
+        replace: "gcp-montreal"
+
+- hosts: gcp-paulo
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/user.supernet/smokeping/parsing_daily.py
+        regexp: 'gcp-sydney'
+        replace: "gcp-paulo"
+
+- hosts: gcp-mumbai
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/user.supernet/smokeping/parsing_daily.py
+        regexp: 'gcp-sydney'
+        replace: "gcp-mumbai"

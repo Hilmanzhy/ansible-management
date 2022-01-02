@@ -1,0 +1,6 @@
+- name: download_file
+  become: true
+  fetch:
+    src: "{{ source }}"
+    dest: "{{ destination }}"
+    flat: yes

@@ -1,0 +1,42 @@
+- name: checklist
+  stat:
+    path: "{{ file }}"
+  register: file_result
+  tags: create
+
+- name: create file
+  file:
+    path: "{{ file }}"
+    state: touch
+    mode: "{{ mode }}"
+  when: not file_result.stat.exists
+  tags: create
+
+- name: remove file
+  file:
+    path: "{{ file }}"
+    state: absent
+  tags: remove
+
+- name: remove all file
+  file:
+    path: "{{ file }}"
+    state: absent
+  tags: remove_all
+
+- name: change permission
+  file:
+    path: "{{ file }}"
+    owner: "{{ owner }}"
+    group: "{{ group }}"
+    mode: "{{ mode }}"
+  tags: permission
+
+- name: change recursive permission
+  file:
+    path: "{{ file }}"
+    state: "{{ directory }}"
+    recursive: yes
+    owner: "{{ owner }}"
+    group: "{{ group }}"
+  tags: permission_all

@@ -1,0 +1,9 @@
+- hosts: aws-hongkong
+  gather_facts: no
+  vars:
+    file: /home/ubuntu/testing/tesan
+    owner: ubuntu
+    group: ubuntu
+    mode: 0755
+  roles:
+    - config_file

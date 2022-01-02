@@ -1,0 +1,36 @@
+- hosts: all-aws
+  gather_facts: no
+  tasks:
+    - name: upload a main file
+      become: true
+      copy:
+        src: /home/anonym/immobi/Smokeping/File_targets/targets_remote/run.sh
+        dest: /home/config/run.sh
+        owner: root
+        group: root
+
+    - name: upload a sync.py file
+      become: true
+      copy:
+        src: /home/anonym/immobi/Smokeping/File_targets/targets_remote/run_script.py
+        dest: /home/config/run.py
+        owner: root
+        group: root
+      tags: script
+
+    - name: upload a Probes file
+      become: true
+      copy:
+        src: /home/anonym/immobi/Smokeping/File_targets/targets_remote/Probes
+        dest: /home/config/Probes
+        owner: ubuntu
+        group: ubuntu
+      tags: probes
+
+    - name: upload a Targets file
+      become: true
+      copy:
+        src: /home/anonym/immobi/Smokeping/File_targets/targets_remote/Targets
+        dest: /home/config/Targets
+        owner: ubuntu
+        group: ubuntu

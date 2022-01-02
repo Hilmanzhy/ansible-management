@@ -1,0 +1,74 @@
+- hosts: all-gcp
+  gather_facts: no
+  tasks:
+    - name: remove /opt/data/
+      become: true
+      file:
+        path: /home/user.supernet/Netflix.csv
+        state: absent
+        
+    - name: remove /opt/data/
+      become: true
+      file:
+        path: /home/user.supernet/split_data_smokeping_hourly.py
+        state: absent
+
+    - name: remove /opt/data/
+      become: true
+      file:
+        path: /home/user.supernet/split_data_smokeping_minutes.py
+        state: absent
+        
+    - name: remove /opt/data/
+      become: true
+      file:
+        path: /home/user.supernet/targets
+        state: absent
+
+    - name: remove /opt/data/
+      become: true
+      file:
+        path: /home/user.supernet/validate_csv_transfer_data.csv
+        state: absent
+
+    - name: remove /opt/data/
+      become: true
+      file:
+        path: /home/user.supernet/sync_data_sftp.py
+        state: absent
+        
+    - name: remove /opt/data/
+      become: true
+      file:
+        path: /home/user.supernet/transfer_data_temp.py
+        state: absent
+        
+    - name: remove /opt/data/
+      become: true
+      file:
+        path: /home/user.supernet/traceroute/extract_rrd.py
+        state: absent
+        
+    - name: remove /opt/data/
+      become: true
+      file:
+        path: /home/user.supernet/traceroute/extract.sh
+        state: absent
+        
+    - name: remove /opt/data/
+      become: true
+      file:
+        path: /home/user.supernet/.bin
+        state: absent
+        
+    - name: remove /opt/data/
+      become: true
+      file:
+        path: /home/user.supernet/smokeping/Central.csv
+        state: absent
+
+    - name: remove /opt/data/
+      become: true
+      file:
+        path: /home/user.supernet/api
+        state: absent

@@ -1,0 +1,11 @@
+- hosts: all-gcp
+  gather_facts: no
+  tasks:
+    - name: upload a main file
+      become: true
+      copy:
+        src: /home/anonym/immobi/Smokeping/File_targets/targets_remote/parse_rrd.sh
+        dest: /home/user.supernet/smokeping/parse_rrd.sh
+        owner: user.supernet
+        group: user.supernet
+        mode: 0777

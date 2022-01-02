@@ -1,0 +1,17 @@
+- hosts: all-gcp-new
+  tasks:
+    - name: upload a main file
+      become: true
+      copy:
+        src: /home/anonym/immobi/VA/Code/traceroute/extract.sh
+        dest: /home/user.supernet/traceroute/extract.sh
+        owner: root
+        group: root
+
+    - name: upload a extract.py file
+      become: true
+      copy:
+        src: /home/anonym/immobi/VA/Code/traceroute/extract_rrd.py
+        dest: /home/user.supernet/traceroute/extract_rrd.py
+        owner: root
+        group: root

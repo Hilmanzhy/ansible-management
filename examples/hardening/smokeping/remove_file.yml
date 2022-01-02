@@ -1,0 +1,7 @@
+- hosts: all-aws-new
+  tasks:
+    - name: remove file
+      become: true
+      file:
+        path: /opt/data2/
+        state: absent

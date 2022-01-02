@@ -1,0 +1,6 @@
+- hosts: all-aws
+  tasks:
+  - name: Stop a container
+    docker_container:
+      name: smokeping
+      state: stopped

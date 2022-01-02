@@ -1,0 +1,42 @@
+- hosts: all-gcp
+  gather_facts: no
+  tasks:
+    - name: run script
+      become: true
+      become_user: root
+      command: sudo chmod -R 777 /opt/output/hourly
+
+    - name: run script
+      become: true
+      become_user: root
+      command: sudo chmod -R 777 /opt/output/minutes_5
+
+    - name: run script
+      become: true
+      become_user: root
+      command: sudo chmod -R 777 /opt/output/staging_final_daily
+
+    - name: run script
+      become: true
+      become_user: root
+      command: sudo chmod -R 777 /opt/output/staging_final_daily_5
+
+    - name: run script
+      become: true
+      become_user: root
+      command: sudo chmod -R 777 /opt/output/staging_data_daily
+
+    - name: run script
+      become: true
+      become_user: root
+      command: sudo chmod -R 777 /opt/output/staging_data_daily_5
+
+    - name: run script
+      become: true
+      become_user: root
+      command: sudo chmod -R 777 /opt/output/final_daily
+
+    - name: run script
+      become: true
+      become_user: root
+      command: sudo chmod -R 777 /opt/output/final_daily_5

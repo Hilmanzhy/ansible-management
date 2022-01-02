@@ -1,0 +1,27 @@
+- hosts: raspi-tsel-jateng
+  tasks:
+    - name: run script
+      become: true
+      become_user: root
+      command: python3 /home/config/Copy.py
+
+- hosts: raspi-isat-jateng
+  tasks:
+    - name: run script
+      become: true
+      become_user: root
+      command: python3 /home/config/Copy.py
+
+- hosts: raspi-xl-jateng
+  tasks:
+    - name: run script
+      become: true
+      become_user: root
+      command: python3 /home/config/Copy.py
+
+- hosts: raspi-tri-jateng
+  tasks:
+    - name: run script
+      become: true
+      become_user: root
+      command: python3 /home/config/Copy.py

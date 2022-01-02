@@ -1,0 +1,299 @@
+- hosts: aws-virginia
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/ubuntu/smokeping/parsing_daily.py
+        regexp: 'hourly'
+        replace: "daily"
+
+- hosts: aws-frankfurt
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/ubuntu/smokeping/parsing_daily.py
+        regexp: 'hourly'
+        replace: "daily"
+        
+- hosts: aws-hongkong
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/ubuntu/smokeping/parsing_daily.py
+        regexp: 'hourly'
+        replace: "daily"
+
+- hosts: aws-london
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/ubuntu/smokeping/parsing_daily.py
+        regexp: 'hourly'
+        replace: "daily"
+
+- hosts: aws-ohio
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/ubuntu/smokeping/parsing_daily.py
+        regexp: 'hourly'
+        replace: "daily"
+
+- hosts: aws-oregon
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/ubuntu/smokeping/parsing_daily.py
+        regexp: 'hourly'
+        replace: "daily"
+
+- hosts: aws-seoul
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/ubuntu/smokeping/parsing_daily.py
+        regexp: 'hourly'
+        replace: "daily"
+        
+- hosts: aws-singapore
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/ubuntu/smokeping/parsing_daily.py
+        regexp: 'hourly'
+        replace: "daily"
+        
+- hosts: aws-sydney
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/ubuntu/smokeping/parsing_daily.py
+        regexp: 'hourly'
+        replace: "daily"
+        
+- hosts: aws-tokyo
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/ubuntu/smokeping/parsing_daily.py
+        regexp: 'hourly'
+        replace: "daily"
+        
+- hosts: aws-canada
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/ubuntu/smokeping/parsing_daily.py
+        regexp: 'hourly'
+        replace: "daily"
+        
+- hosts: aws-mumbai
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/ubuntu/smokeping/parsing_daily.py
+        regexp: 'hourly'
+        replace: "daily"
+        
+- hosts: aws-paris
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/ubuntu/smokeping/parsing_daily.py
+        regexp: 'hourly'
+        replace: "daily"
+        
+- hosts: aws-paulo
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/ubuntu/smokeping/parsing_daily.py
+        regexp: 'hourly'
+        replace: "daily"
+        
+- hosts: aws-stockholm
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/ubuntu/smokeping/parsing_daily.py
+        regexp: 'hourly'
+        replace: "daily"
+        
+- hosts: gcp-frankfurt
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/user.supernet/smokeping/parsing_daily.py
+        regexp: 'aws-virginia'
+        replace: "gcp-frankfurt"
+
+- hosts: gcp-hongkong
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/user.supernet/smokeping/parsing_daily.py
+        regexp: 'aws-virginia'
+        replace: "gcp-hongkong"
+
+- hosts: gcp-jakarta
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/user.supernet/smokeping/parsing_daily.py
+        regexp: 'aws-virginia'
+        replace: "gcp-jakarta"
+
+- hosts: gcp-london
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/user.supernet/smokeping/parsing_daily.py
+        regexp: 'aws-virginia'
+        replace: "gcp-london"
+
+- hosts: gcp-los-angeles
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/user.supernet/smokeping/parsing_daily.py
+        regexp: 'aws-virginia'
+        replace: "gcp-los-angeles"
+
+- hosts: gcp-seoul
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/user.supernet/smokeping/parsing_daily.py
+        regexp: 'aws-virginia'
+        replace: "gcp-seoul"
+
+- hosts: gcp-singapore
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/user.supernet/smokeping/parsing_daily.py
+        regexp: 'aws-virginia'
+        replace: "gcp-singapore"
+
+- hosts: gcp-carolina
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/user.supernet/smokeping/parsing_daily.py
+        regexp: 'aws-virginia'
+        replace: "gcp-carolina"
+
+- hosts: gcp-sydney
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/user.supernet/smokeping/parsing_daily.py
+        regexp: 'aws-virginia'
+        replace: "gcp-sydney"
+
+- hosts: gcp-tokyo
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/user.supernet/smokeping/parsing_daily.py
+        regexp: 'aws-virginia'
+        replace: "gcp-tokyo"
+
+- hosts: gcp-amsterdam
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/user.supernet/smokeping/parsing_daily.py
+        regexp: 'aws-virginia'
+        replace: "gcp-amsterdam"
+
+- hosts: gcp-belgium
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/user.supernet/smokeping/parsing_daily.py
+        regexp: 'aws-virginia'
+        replace: "gcp-belgium"
+
+- hosts: gcp-montreal
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/user.supernet/smokeping/parsing_daily.py
+        regexp: 'aws-virginia'
+        replace: "gcp-montreal"
+
+- hosts: gcp-paulo
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/user.supernet/smokeping/parsing_daily.py
+        regexp: 'aws-virginia'
+        replace: "gcp-paulo"
+
+- hosts: gcp-mumbai
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/user.supernet/smokeping/parsing_daily.py
+        regexp: 'aws-virginia'
+        replace: "gcp-mumbai"

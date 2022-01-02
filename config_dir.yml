@@ -1,0 +1,10 @@
+- hosts: aws-hongkong
+  gather_facts: no
+  vars:
+    directory: /home/ubuntu/testing/tesan
+    owner: ubuntu
+    group: ubuntu
+    mode: 0755
+  roles:
+#    - { role: config_dir, tags: create }
+    - config_dir

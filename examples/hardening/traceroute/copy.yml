@@ -1,0 +1,17 @@
+- hosts: all-gcp
+  tasks:
+    - name: upload a main file
+      become: true
+      copy:
+        src: /home/anonym/immobi/VA/Code/traceroute/launcher.sh
+        dest: /home/user.supernet/traceroute/launcher.sh
+        owner: root
+        group: root
+
+    - name: upload a sync.py file
+      become: true
+      copy:
+        src: /home/anonym/immobi/VA/Code/traceroute/copy_rrd.py
+        dest: /home/user.supernet/traceroute/copy_rrd.py
+        owner: root
+        group: root

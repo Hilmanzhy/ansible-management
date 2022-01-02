@@ -1,0 +1,8 @@
+- hosts: aws-hongkong
+  tasks:
+    - name: Create a New Directory using file
+      file:
+        path: /opt/data
+        state: directory
+        owner: root
+        group: root

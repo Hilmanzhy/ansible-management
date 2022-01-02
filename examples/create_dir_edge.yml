@@ -1,0 +1,45 @@
+- hosts: raspi-kalimantan
+  tasks:
+    - name: Create a New Directory using file
+      file:
+        path: /opt/output/staging_final_daily
+        state: directory
+        owner: root
+        group: root
+
+- hosts: raspi-sulawesi
+  tasks:
+    - name: Create a New Directory using file
+      file:
+        path: /opt/output/staging_final_daily
+        state: directory
+        owner: root  
+        group: root  
+
+- hosts: raspi-palembang
+  tasks:
+    - name: Create a New Directory using file
+      file:
+        path: /opt/output/staging_final_daily
+        state: directory
+        owner: root  
+        group: root  
+
+- hosts: raspi-jakarta
+  tasks:
+    - name: Create a New Directory using file
+      file:
+        path: /opt/output/staging_final_daily
+        state: directory
+        owner: root  
+        group: root  
+
+- hosts: raspi-jateng
+  tasks:
+    - name: Create a New Directory using file
+      file:
+        path: /opt/output/staging_final_daily
+        state: directory
+        owner: root  
+        group: root  
+

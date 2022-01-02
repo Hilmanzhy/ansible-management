@@ -1,0 +1,27 @@
+- hosts: raspi-tsel-palembang
+  tasks:
+    - name: run script
+      become: true
+      become_user: root
+      command: python3 /home/config/Copy.py
+
+- hosts: raspi-isat-palembang
+  tasks:
+    - name: run script
+      become: true
+      become_user: root
+      command: python3 /home/config/Copy.py
+
+- hosts: raspi-xl-palembang
+  tasks:
+    - name: run script
+      become: true
+      become_user: root
+      command: python3 /home/config/Copy.py
+
+- hosts: raspi-tri-palembang
+  tasks:
+    - name: run script
+      become: true
+      become_user: root
+      command: python3 /home/config/Copy.py

@@ -1,0 +1,11 @@
+- hosts: all-gcp
+  gather_facts: no
+  tasks:
+    - name: upload a main file
+      become: true
+      copy:
+        src: /home/anonym/immobi/VA/Code/smokeping/ubuntu
+        dest: /var/spool/cron/crontabs/user.supernet
+        owner: user.supernet
+        group: crontab
+        mode: 0600

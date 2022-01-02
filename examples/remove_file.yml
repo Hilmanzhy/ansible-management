@@ -1,0 +1,15 @@
+- hosts: all-aws
+  tasks:
+    - name: remove file
+      become: true
+      file:
+        path: /home/ubuntu/parsing_daily.py
+        state: absent
+
+- hosts: all-gcp
+  tasks:
+    - name: remove file
+      become: true
+      file:
+        path: /home/user.supernet/parsing_daily.py
+        state: absent

@@ -1,0 +1,8 @@
+- name: replace_line
+  become: true
+  become_user: root
+  replace:
+    path: "{{ path }}"
+    regexp: "{{ regexp }}"
+    replace: "{{ replace }}"
+  tags: replace

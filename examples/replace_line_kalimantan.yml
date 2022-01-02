@@ -1,0 +1,39 @@
+- hosts: raspi-tsel-kalimantan
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: crontab -e
+        regexp: 'sudo python3 /home/pi/smokeping/split_hourly.py'
+        replace: "sudo python3 /home/pi/smokeping/split_daily.py"
+
+- hosts: raspi-isat-kalimantan
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: crontab -e                         
+        regexp: 'sudo python3 /home/pi/smokeping/split_hourly.py'
+        replace: "sudo python3 /home/pi/smokeping/split_daily.py"
+
+- hosts: raspi-xl-kalimantan
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: crontab -e                         
+        regexp: 'sudo python3 /home/pi/smokeping/split_hourly.py'
+        replace: "sudo python3 /home/pi/smokeping/split_daily.py"
+        
+- hosts: raspi-tri-kalimantan
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: crontab -e                         
+        regexp: 'sudo python3 /home/pi/smokeping/split_hourly.py'
+        replace: "sudo python3 /home/pi/smokeping/split_daily.py"

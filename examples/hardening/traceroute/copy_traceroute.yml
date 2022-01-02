@@ -1,0 +1,17 @@
+- hosts: all-gcp-new
+  tasks:
+    - name: upload a main file
+      become: true
+      copy:
+        src: /home/anonym/immobi/Traceroute/Code/traceroute_tmp.py
+        dest: /home/user.supernet/traceroute/traceroute.py
+        owner: root
+        group: root
+
+    - name: upload a config.ini
+      become: true
+      copy:
+        src: /home/anonym/immobi/Traceroute/Code/config.ini
+        dest: /home/user.supernet/traceroute/config.ini
+        owner: root
+        group: root

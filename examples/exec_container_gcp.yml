@@ -1,0 +1,12 @@
+- hosts: gcp-mumbai
+  tasks:
+    - name: Run a simple command
+      community.docker.docker_container_exec:
+        container: smokeping
+        command: /bin/bash -c "ls -lah"
+        chdir: /root
+      register: result
+
+    - name: Print stdout
+      debug:
+        var: result.stdout

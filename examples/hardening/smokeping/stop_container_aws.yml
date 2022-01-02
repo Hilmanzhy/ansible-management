@@ -1,0 +1,9 @@
+- hosts: all-aws-new
+  vars:
+  - ansible_python_interpreter: /usr/bin/python2.7
+  gather_facts: no
+  tasks:
+  - name: Stop a container
+    docker_container:
+      name: smokeping
+      state: stopped

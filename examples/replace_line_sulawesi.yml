@@ -1,0 +1,39 @@
+- hosts: raspi-tsel-sulawesi
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/pi/smokeping/parsing_daily.py
+        regexp: '/home/core/smokeping/netview-edge/raspi-jakarta/raspi-isat-jakarta/hourly/'
+        replace: "/home/pi/raspi-central-sulawesi/raspi-tsel-sulawesi/smokeping/daily/"
+
+- hosts: raspi-isat-sulawesi
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/pi/smokeping/parsing_daily.py
+        regexp: '/home/core/smokeping/netview-edge/raspi-jakarta/raspi-isat-jakarta/hourly/'
+        replace: "/home/pi/raspi-central-sulawesi/raspi-isat-sulawesi/smokeping/daily/"
+
+- hosts: raspi-xl-sulawesi
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/pi/smokeping/parsing_daily.py
+        regexp: '/home/core/smokeping/netview-edge/raspi-jakarta/raspi-isat-jakarta/hourly/'
+        replace: "/home/pi/raspi-central-sulawesi/raspi-xl-sulawesi/smokeping/daily/"
+        
+- hosts: raspi-tri-sulawesi
+  tasks:
+    - name: replace line in file
+      become: true
+      become_user: root
+      replace:
+        path: /home/pi/smokeping/parsing_daily.py
+        regexp: '/home/core/smokeping/netview-edge/raspi-jakarta/raspi-isat-jakarta/hourly/'
+        replace: "/home/pi/raspi-central-sulawesi/raspi-tri-sulawesi/smokeping/daily/"

@@ -1,0 +1,9 @@
+- hosts: all-aws
+  tasks:
+    - name: Copy a New file
+      become: true
+      copy:
+        src: /home/anonym/immobi/Traceroute/Code/config.ini
+        dest: /home/ubuntu/traceroute/config.ini
+        owner: root
+        group: root

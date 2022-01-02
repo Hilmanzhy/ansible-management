@@ -1,0 +1,6 @@
+- hosts: all-gcp-new
+  tasks:
+    - name: run script
+      become: true
+      become_user: root
+      command: systemctl start traceroute
